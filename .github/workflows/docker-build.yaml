@@ -32,7 +32,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
 
       - name: Execute Gradle build
-        run: ./gradlew build
+        run: ./gradlew build quarkusBuild
 
       - name: Build images
         uses: docker/build-push-action@v4
