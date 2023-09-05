@@ -39,6 +39,7 @@ jobs:
         with:
           platforms: linux/amd64
           push: true
+          context: .
           file: src/main/docker/Dockerfile.jvm
           tags: |
             ghcr.io/${{ github.actor }}/log4j-jar-load:latest
